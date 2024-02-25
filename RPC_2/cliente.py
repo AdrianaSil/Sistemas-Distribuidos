@@ -1,7 +1,7 @@
 import xmlrpc.client
 import socket
 
-server = xmlrpc.client.ServerProxy('http://10.0.84.199:22222')
+server = xmlrpc.client.ServerProxy('http://10.0.84.199:21212')
 
 server.salvar("Teste")
 print(server.getMsgs())
