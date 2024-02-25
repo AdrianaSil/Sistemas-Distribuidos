@@ -5,7 +5,7 @@ from datetime import datetime
 class RequestHandler(SimpleXMLRPCRequestHandler):
     rpc_paths = ('/RPC2',)
 
-with SimpleXMLRPCServer(('10.0.84.199', 22222), requestHandler=RequestHandler) as server:
+with SimpleXMLRPCServer(('10.0.84.199', 21212), requestHandler=RequestHandler) as server:
     server.register_introspection_functions()
 
     mensagens = []
